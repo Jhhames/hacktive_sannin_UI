@@ -90,7 +90,7 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <header class="card-header">
-                                                <a href="" data-toggle="modal" data-target="#loginModal" class="float-right btn btn-outline-success mt-1">Log in</a>
+                                                <a href="" data-toggle="modal" data-target="#loginModal" class="float-right btn btn-outline-secondary mt-1">Log in</a>
                                                 <h4 class="card-title mt-2">Sign up</h4>
                                             </header>
                                             <article class="card-body">
@@ -109,6 +109,11 @@
                                                     </div>
                                                     <!-- form-row end.// -->
                                                     <div class="form-group text-left font-weight-bold">
+                                                        <label>Username </label>
+                                                        <input type="text" required class="form-control" name="username" placeholder="Choose a username">
+
+                                                    </div>
+                                                    <div class="form-group text-left font-weight-bold">
                                                         <label>Email address</label>
                                                         <input type="email" required class="form-control" name="email" placeholder="Enter Email address">
                                                         <small class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -117,15 +122,35 @@
 
                                                     <div class="form-row">
                                                         <div class="form-group text-left font-weight-bold col-md-6">
-                                                            <label>City</label>
-                                                            <input type="text" required class="form-control" name="city" placeholder="Enter City you live in">
+                                                            <label>Account Number</label>
+                                                            <input type="number" required class="form-control" name="accnumber" placeholder="Enter your bank account number">
                                                         </div>
                                                         <!-- form-group end.// -->
                                                         <div class="form-group text-left font-weight-bold col-md-6">
-                                                            <label>Country</label>
-                                                            <select id="inputState" name="country" class="form-control">
-                                                                <option selected="">Nigeria</option>
-                                                                <option>Other</option>
+                                                            <label>Bank</label>
+                                                            <select id="bankSelect" name="bank" class="form-control">
+                                                                    <option selected disabled>Select Bank </option>
+                                                                    <option value="access-bank">Access Bank</option>
+                                                                    <option value="citibank-nigeria">Citibank Nigeria</option>
+                                                                    <option value="diamond-bank">Diamond Bank</option>
+                                                                    <option value="ecobank-nigeria">Ecobank Nigeria</option>
+                                                                    <option value="enterprise-bank">Enterprise Bank</option>
+                                                                    <option value="fidelity-bank">Fidelity Bank</option>
+                                                                    <option value="first-bank-of-nigeria">First Bank of Nigeria</option>
+                                                                    <option value="first-city-monument-bank">First City Monument Bank</option>
+                                                                    <option value="guaranty-trust-bank">Guaranty Trust Bank</option>
+                                                                    <option value="heritage-bank">Heritage Bank</option>
+                                                                    <option value="keystone-bank">Keystone Bank</option>
+                                                                    <option value="mainstreet-bank">MainStreet Bank</option>
+                                                                    <option value="skye-bank">Skye Bank</option>
+                                                                    <option value="stanbic-ibtc-bank">Stanbic IBTC Bank</option>
+                                                                    <option value="standard-chartered-bank">Standard Chartered Bank</option>
+                                                                    <option value="sterling-bank">Sterling Bank</option>
+                                                                    <option value="union-bank-of-nigeria">Union Bank of Nigeria</option>
+                                                                    <option value="united-bank-for-africa">United Bank For Africa</option>
+                                                                    <option value="unity-bank">Unity Bank</option>
+                                                                    <option value="wema-bank">Wema Bank</option>
+                                                                    <option value="zenith-bank">Zenith Bank</option>
                                                             </select>
                                                         </div>
                                                         <!-- form-group end.// -->
@@ -168,11 +193,10 @@
             <div class="row justify-content-center">
                 <div class="col-sm-10">
                     <h3 class="font-weight-bold text-center verdana">Stressful tranferring funds at regular intervals right? </h3>
-                    <div class="d-block text-center" style="font-size:20px;"><span class="fa fa-refresh fa-spin"></span></div>
+                    <hr id="thread1">
+                    <!-- <div class="d-block text-center" style="font-size:20px;"><span class="fa fa-refresh fa-spin"></span></div> -->
                     <p class="lead text-center">
-                        No more stress. Delta is here to give you that rest of mind you deserve. <span class="fa fa-check text-success"></span>
-                        <span class="text-success fa fa-check"></span>
-                        <span class="text-success fa fa-check"></span>
+                        No more stress. Delta is here to give you that rest of mind you deserve.
                     </p>
                 </div>
             </div>
@@ -210,7 +234,7 @@
                             <center>
                                 <span class="fa fa-check-square-o" style="font-size:40px;"></span>
                                 <h3 class="monospace"> Schedule Your Expenses</h3>
-                                <P>Delta git you covered</P>
+                                <P>Spave got you covered</P>
                                 <P>With the option to pause and resume transfers at will</P>
 
                             </center>
@@ -225,7 +249,7 @@
         <div class="container p-4">
             <div class="row justify-content-center p-4">
                 <div class="col-sm-6">
-                    <h3 class="comic text-center font-weight-bold">Delta's Mode Of Operations <span class="fa fa-rocket"></span> </h3>
+                    <h3 class="comic text-center font-weight-bold">Spave's Mode Of Operations <span class="fa fa-rocket"></span> </h3>
                     <p class="lead">
                         Setting up your Delta recursive fund transfer is pretty easy, follow the steps listed below and enjoy our services
                     </p>
@@ -426,7 +450,7 @@
         $(document).ready(function() {
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
-                if (scroll > 200) {
+                if (scroll > 100) {
                     $("#nav-bar").addClass('nav-bar-scroll');
                     $('.nav-link').addClass('nav-link-scroll');
 

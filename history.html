@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Foorloop Hack-ife</title>
+    <title>Spave - Spend wisely, Save wisely</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -36,36 +36,25 @@
                     <p>
                         <span class="d-inline-block mr-1 fa fa-user"></span>
                         <span class="comic">Jhhames </span>
+
+                        <span class="badge badge-light">Bal: $50,0299 </span>
                     </p>
                     <hr class="separator">
                     <li>
                         <a href="" aria-expanded="false"> <span class="fa fa-home"></span> Home</a>
                     </li>
-                    <li>
-                        <a href="#"><span class="fa fa-credit-card"></span> Savings </a>
-                    </li>
                     <li class="active">
-                        <a href="#"><span class="fa fa-credit-card"></span> Spendings and Expenses </a>
+                        <a href="#"><span class="fa fa-briefcase"></span> Savings </a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-money"></span> Spendings and Expenses </a>
                     </li>
                     <li>
                         <a href="#"><span class="fa fa-credit-card"></span> Add billing method</a>
                     </li>
-                    <!-- <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
+
                     <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
-                </ul>
-            </li> -->
-                    <li>
-                        <a href="#"><span class="fa fa-users"></span> Benefiiciaries </a>
+                        <a href="#"><span class="fa fa-calendar"></span> Transaction History </a>
                     </li>
                     <li>
                         <a href="#"><span class="fa fa-question-circle"></span> Help </a>
@@ -75,14 +64,14 @@
             </nav>
             <!-- Page Content -->
             <div id="content">
-                <nav class="navbar navbar-expand-sm navbar-dark px-0 py-0 bg-dark text-light" id="navbar-head">
+                <nav class="navbar navbar-expand-sm navbar-dark px-0 py-0 text-light" id="navbar-head">
                     <div class="container">
                         <button type="button" id="sidebarCollapse" class="btn pl-1 btn-link text-light">
-                            <i class="fa fa-bars text-light" style="font-size:25px"></i>
+                            <i class="fa fa-bars text-dark" style="font-size:25px"></i>
                         </button>
                         <img src="img/favicon.png" class="d-inline-block mx-auto" alt="Logo" width="150px">
                         <form>
-                            <button class="btn btn-light btn-sm">
+                            <button class="btn btn-dark btn-sm">
                             <span class="fa fa-sign-out"></span> Sign Out
                         </button>
                         </form>
@@ -94,58 +83,49 @@
                     you to start your schedules as soon as we're back online. <span class="fa fa-thumbs-up"></span>
                 </p>
                 <section>
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <!-- Card -->
-                                <div class="card ovf-hidden">
-
-                                    <!-- Card image -->
-                                    <div class="view overlay">
-                                        <a>
-                                            <div class="mask waves-effect waves-light rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Card content -->
-                                    <div class="card-body">
-
-                                        <!-- Title -->
-                                        <h4 class="card-title font-weight-bold">
-                                            <img src="img/expense.png " class="img-fluid" width="20px" alt="expense"> Child pocket mmoney </h4>
-                                        <hr>
-                                        <!-- Text -->
-                                        <p class="card-text">
-                                            <p> <b>Amount</b> <span class="text-success"> $5,000 </span> | every <span class="text-primary"> 7days </span> </p>
-                                            <p> <span class="font-weight-bold"> Status :</span> <span class="text-success">Active</span> </p>
-                                            <p> <span class="font-weight-bold"> Account Number :</span> <span> 1109283777 </span> </p>
-
-
-                                        </p>
-                                        <hr>
-                                        <button class="btn btn-danger float-left btn-sm"> Pause </button>
-                                        <button class="btn btn-success float-right btn-sm"> Continue </button>
-
-                                        <a class="link-text">
-                                            <!-- <h5>Read more <i class="fa fa-angle-double-right ml-2"></i></h5> -->
-                                        </a>
-
-                                    </div>
-
-
-
-                                </div>
-                                <!-- Card -->
-                            </div>
-
-
+                            <table class="table table-striped">
+                                <thead class="black white-text">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Date </th>
+                                        <th scope="col"> Expense/Savings </th>
+                                        <th scope="col"> Amount</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </section>
                 <section>
                     <div class="container fixed-bottom">
                         <div class="row">
-                            <button class="btn btn-info btn-rounded ml-auto" data-toggle="modal" data-target="#exampleModal">Add Beneficiary</button>
+                            <button class="btn btn-dark rounded-circle ml-auto mb-3 py-3 px-3" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-briefcase" title="Add New Expense" style="font-size:22px;"></span></button>
                         </div>
                     </div>
                 </section>
@@ -160,7 +140,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title " id="exampleModalLabel"><span class="fa fa-money"></span> Add new Beneficiary </h5>
+                        <h5 class="modal-title " id="exampleModalLabel"><span class="fa fa-briefcase"></span> Savings Plan </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -169,13 +149,17 @@
                         <form>
                             <div class="row">
                                 <div class="form-group col-md-12">
-                                    <label for="benName" class="font-weight-bold">Expense Title</label>
-                                    <input type="text" id="benName" name="name" class="form-control" placeholder="What are you spending this money on...">
+                                    <label for="benName" class="font-weight-bold">Savings Title</label>
+                                    <input type="text" id="benName" name="name" class="form-control" placeholder="What are you saving for...">
                                 </div>
 
+                                <div class="form-group col-md-12">
+                                    <label for="benAcc" class="font-weight-bold">Enter Target</label>
+                                    <input type="number" id="benAcc" name="amount" class="form-control" placeholder="Enter Savings Goal">
+                                </div>
                                 <div class="form-group col-md-6">
-                                    <label for="benAcc" class="font-weight-bold">Enter Amount</label>
-                                    <input type="text" id="benAcc" name="amount" class="form-control" placeholder="Enter Amount">
+                                    <label for="benName" class="font-weight-bold">Enter Deductions </label>
+                                    <input type="number" id="benName" name="name" class="form-control" placeholder="Savings per Interval">
                                 </div>
 
                                 <div class="form-group col-md-6">
@@ -187,11 +171,6 @@
                                             <option value="30">Monthly </option>
                                             <option value="365">Yearly </option>
                                     </select>
-                                </div>
-
-                                <div class="form-group col-md-12">
-                                    <label for="benAccount" class="font-weight-bold">Account Number</label>
-                                    <input type="number" id="benAccount" name="account" class="form-control" placeholder="Enter Recipient's Account Number">
                                 </div>
 
 

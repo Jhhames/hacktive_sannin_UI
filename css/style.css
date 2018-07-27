@@ -115,54 +115,6 @@ p {
     }
 }
 
-@keyframes move-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-25px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes move-right {
-    0% {
-        opacity: 0;
-        transform: translateX(25px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes display {
-    0% {
-        opacity: 0;
-        transform: scale(.2, 1);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1, 1);
-    }
-}
-
-@keyframes gentle-move {
-    0% {
-        transform: translateY(0px);
-    }
-    20% {
-        transform: translateY(30px);
-    }
-    80% {
-        transform: translateY(-30px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
 
 /* Sidenav */
 
@@ -195,9 +147,9 @@ p {
 }
 
 #navbar-head {
-    background-image: url('../img/accounting-achievement-aerial-1043506.jpg');
+    background-image: url('../img/blur-business-chart-159888.jpg');
     background-size: cover;
-    background-color: rgba(00, 0, 0, .9);
+    background-color: rgba(255, 255, 255, 0.5);
     background-position: center;
     background-blend-mode: overlay;
 }
@@ -271,4 +223,128 @@ a[aria-expanded="true"] {
 #sidebar a:hover {
     color: black !important;
     background-color: #b666d2;
+}
+
+#delta-flow hr {
+    display: block;
+    border-top: 2px solid #6f42c1;
+    left: 0px;
+    width: 100%;
+    margin: 0;
+}
+
+#delta-flow hr#thread1 {
+    top: 0.8em;
+    -webkit-animation: thread2 6s infinite;
+    -moz-animation: thread2 10s infinite;
+    -o-animation: thread2 10s infinite;
+    animation: thread2 10s infinite;
+}
+
+@keyframes move-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-right {
+    0% {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes display {
+    0% {
+        opacity: 0;
+        transform: scale(.2, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes gentle-move {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes thread2 {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 100%;
+    }
+    80% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes thread2 {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 100%;
+    }
+    80% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-o-keyframes thread2 {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 100%;
+    }
+    80% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes thread2 {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 100%;
+    }
+    80% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
 }
